@@ -2,11 +2,11 @@ $(function(){
 
 
   //css for main box
-    var boxStyle =  {
-      width: "630px",
-      height: "630px",
-      margin: "auto"
-    }
+  var boxStyle =  {
+    width: "630px",
+    height: "630px",
+    margin: "auto"
+  }
   // set some styling to the squares
   var squareStyle =  {
     display: "inline-block",
@@ -111,7 +111,6 @@ $(function(){
           if ((count % 2) == 0) {
             // save the move made by playerone to array
             playerOne.push($(this).data("pos"));
-            console.log(playerOne);
             // change the color of the naught to red
             $(this).css({color: "red"});
             $(this).text("O");
@@ -129,7 +128,6 @@ $(function(){
             // player twos turn count == odd
             // have the move done yb player two into array
             playerTwo.push($(this).data("pos"));
-            console.log(playerTwo);
             //change the color of the cross to blue
             $(this).css({color: "blue"});
             $(this).text("X");
@@ -148,6 +146,6 @@ $(function(){
   }
   // load game on reload
   game();
-
+  
 
 });
