@@ -1,0 +1,12 @@
+.naught{
+  background-Image: url('images/circle.png');
+  background-Size: cover;
+  color: black;
+}
+
+.cross{
+  background-Image: url('images/cross.png');
+  background-Size: cover;
+  transform: rotate(45deg);
+  color: black;
+}
