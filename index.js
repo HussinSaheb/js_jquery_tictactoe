@@ -1,6 +1,4 @@
 $(function(){
-
-
   //css for main box
   var boxStyle =  {
     width: "630px",
@@ -53,8 +51,6 @@ $(function(){
   $("div").attr("id", "box");
   //apply css to box
   $("#box").css(boxStyle);
-
-
   // add for loop to generate squares inside the box
   for (var i = 0; i < 9; i++) {
     //add 9 squares to the main div
@@ -64,7 +60,6 @@ $(function(){
     // add to it a class of square
     $("div:not(#box)").attr("class", "square");
   }
-
   //apply the styles to the square
   $(".square").css(squareStyle);
   // append a div to the squares
@@ -73,7 +68,6 @@ $(function(){
   $(".square div").attr("class", "innerSquare");
   // style the innersquare with the css for the outer
   $(".innerSquare").css(innerSquareStyle);
-
   // add a position value to each square.
   // to use them to add to array to check winning states.
   $(".innerSquare").each(function(index){
@@ -146,6 +140,4 @@ $(function(){
   }
   // load game on reload
   game();
-  
-
 });
